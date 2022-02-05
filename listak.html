@@ -1,23 +1,103 @@
 <!DOCTYPE html>
 <html lang="hu">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Old+Standard+TT&display=swap" rel="stylesheet">
+    
+<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+<style>
+    body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+    
+    .sidebar {
+      font-family: 'Mochiy Pop P One', sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #b32e4f;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    .sidebar a {
+      display: block;
+      color: greenyellow;
+      padding: 16px;
+      text-decoration: none;
+    }
+     
+    .sidebar a.active {
+      background-color: #66043d;
+      color: white;
+    }
+    
+    .sidebar a:hover:not(.active) {
+      background-color: rgb(56, 13, 26);
+      color: greenyellow;
+    }
+    
+    div.content {
+      font-family: 'Mochiy Pop P One', sans-serif;
+font-family: 'Old Standard TT', serif;
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+    
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+    
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listák</title>
 </head>
 <body style="background-color: darksalmon;">
-    <nav>
-        <a href="https://flora06.github.io/kollazs/" style="text-decoration: none; color: greenyellow; "><b>Kollázs</b></a>|
-        <b>1.feladat</b>
-                <a href="https://flora06.github.io/kollazs/keplink.html" style="text-decoration: none; color: greenyellow;"><b>Képlink</b></a>|
-        
-        <b>2.feladat</b>
-                <a href="https://flora06.github.io/listak/" style="text-decoration: none; color: greenyellow;"><b>Listák</b></a>|
-        
-        <b>3.feladat</b>
-                <a href="https://flora06.github.io/orarend/" style="text-decoration: none; color: greenyellow;"><b>Órarend</b></a>|
-        
-        </nav>
+<div class="sidebar">
+        <a href="https://flora06.github.io/kollazs/">Kollázs</a>
+        <a href="https://flora06.github.io/kollazs/keplink.html">Képlink</a>
+<a class="active" href="https://flora06.github.io/listak/">Listák</a>
+        <a href="https://flora06.github.io/orarend/">Órarend</a>
+      </div>
+
+<div class="content">
     <h1 style="color:darkred">Szabó Flóra</h1>
     <h2 style="color: darkgreen;">Listák</h2>
     <p style="color:indigo">Kedvenc tantárgyaim:</p>
@@ -32,6 +112,8 @@
     <li style="color:royalblue">Olvasás</li>
     <li style="color:royalblue">Sétálás</li>
 </ul>
+</div>
 </body>
 </html>
+
 
