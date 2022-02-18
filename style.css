@@ -12,6 +12,11 @@ body {
   .kollazs{
       width=500
   }
+
+  .meki{
+     width=250
+  }
+
   .poszterek{
     display: flex;
     margin: 20px;
