@@ -10,12 +10,14 @@ body {
   }
   
   .kollazs{
-      width=500
-  }
+    width:400px;
+    height: 400px;
+}
 
-  .meki{
-     width=250
-  }
+.meki{
+   width:250px;
+   height: 250px;
+}
 
   .poszterek{
     display: flex;
