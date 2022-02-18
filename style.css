@@ -24,6 +24,10 @@ body {
     margin: 20px;
     text-align: center;
   }
+
+.AnimeP{
+    font-family: 'Gloria Hallelujah', cursive;
+}
   
   p{
     font-size: large;
