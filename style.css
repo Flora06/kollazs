@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: darksalmon;
+  }
+  
+  img{
+      width: 200px;
+      height: 300px;
+  }
+  
+  .poszterek{
+    display: flex;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  p{
+    font-size: large;
+  }
+
+  .sidebar {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #b32e4f;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: greenyellow;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #66043d;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: rgb(56, 13, 26);
+    color: greenyellow;
+  }
+  
+  div.content {
+    font-family: 'Mochiy Pop P One', sans-serif;
+font-family: 'Old Standard TT', serif;
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  
