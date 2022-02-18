@@ -9,6 +9,9 @@ body {
       height: 300px;
   }
   
+  .kollazs{
+      width=500
+  }
   .poszterek{
     display: flex;
     margin: 20px;
