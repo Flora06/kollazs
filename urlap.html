@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Űrlap</title>
+    <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
@@ -29,69 +30,19 @@
 <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
     
-<style>
-    body {
-      margin: 0;
-      font-family: "Lato", sans-serif;
-    }
-    
-    .sidebar {
-      font-family: 'Mochiy Pop P One', sans-serif;
-      margin: 0;
-      padding: 0;
-      width: 200px;
-      background-color: #b32e4f;
-      position: fixed;
-      height: 100%;
-      overflow: auto;
-    }
-    
-    .sidebar a {
-      display: block;
-      color: greenyellow;
-      padding: 16px;
-      text-decoration: none;
-    }
-     
-    .sidebar a.active {
-      background-color: #66043d;
-      color: white;
-    }
-    
-    .sidebar a:hover:not(.active) {
-      background-color: rgb(56, 13, 26);
-      color: greenyellow;
-    }
-    
-    div.content {
-      font-family: 'Mochiy Pop P One', sans-serif;
-font-family: 'Old Standard TT', serif;
-      margin-left: 200px;
-      padding: 1px 16px;
-      height: 1000px;
-    }
-    
-    @media screen and (max-width: 700px) {
-      .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-      }
-      .sidebar a {float: left;}
-      div.content {margin-left: 0;}
-    }
-    
-    @media screen and (max-width: 400px) {
-      .sidebar a {
-        text-align: center;
-        float: none;
-      }
-    }
-    </style>
+
 </head>
 <body>
-    <div></div>
+    <div class="sidebar">
+        <a href="https://flora06.github.io/kollazs/">Kollázs</a>
+        <a href="https://flora06.github.io/kollazs/keplink.html">Képlink</a>
+        <a href="https://flora06.github.io/kollazs/listak.html">Listák</a>
+        <a href="https://flora06.github.io/kollazs/orarend.html">Órarend</a>
+        <a class="active" href="https://flora06.github.io/kollazs/urlap.html">Űrlap</a>
+      </div>
+    <div class="content">
     <form>
+    <h1>Anime Poszterek</h1>
     <fieldset>
         <legend><h2>Vevő adatai</h2></legend>
         <p><label>Név <input type="text" name="nev"></label></p>
@@ -99,20 +50,45 @@ font-family: 'Old Standard TT', serif;
         <p><label>Telefon <input type="tel" name="telefon" size="10"></label></p>
     </fieldset>
     <fieldset>
-        <legend>Pizza mérete</legend>
-        <p><label><input type="radio" name="meret" value="26">26</label></p>
-        <p><label><input type="radio" name="meret" value="34">34</label></p>
-        <p><label><input type="radio" name="meret" value="52">52</label></p>
+    <legend><h2>Poszterek</h2></legend>
+    <div class="poszterek">
+    <div>
+        <img src="https://cdn.shopify.com/s/files/1/0747/3829/products/mL0215_1024x1024.jpg?v=1571444773" alt="">
+        <p>Boku no Hero Academia</p>
+    </div>
+    <div>
+        <img src="https://m.media-amazon.com/images/I/81dH7-pkjiL._AC_SL1500_.jpg" alt="">
+        <p>Attack on Titan</p>
+    </div>
+    <div>
+        <img src="https://static.posters.cz/image/750webp/58005.webp" alt="">
+        <p>Death Note</p>
+    </div>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/SK8_the_Infinity.jpg/220px-SK8_the_Infinity.jpg" alt="">
+        <p>Sk8 the Infinity</p>
+    </div>
+    <div>
+        <img src="https://cdn.myanimelist.net/images/anime/1666/102238.jpg" alt="">
+        <p>Given</p>
+    </div>
+    <div>
+        <img src="http://cdn.myanimelist.net/images/anime/13/33465l.jpg" alt="">
+        <p>Mirai Nikki</p>
+    </div>
+    </div>
     </fieldset>
     <fieldset>
-        <legend>Feltétek</legend>
-        <p><label><input type="checkbox" name="feltet1" value="sajtos">Sajtos</label></p>
-        <p><label><input type="checkbox" name="feltet2" value="négysajtos">Négysajtos</label></p>
-        <p><label><input type="checkbox" name="feltet1" value="sonkás">Sonkás</label></p>
-        <p><label><input type="checkbox" name="feltet3" value="húsimádó">Húsimádó</label></p>
+        <legend><h2>Kiválasztott termék</h2></legend>
+        <p><label><input type="checkbox" name="poszter1" value="sajtos">Boku no Hero Academia</label></p>
+        <p><label><input type="checkbox" name="poszter2" value="négysajtos">Attack on Titan</label></p>
+        <p><label><input type="checkbox" name="poszter3" value="sonkás">Death Note</label></p>
+        <p><label><input type="checkbox" name="poszter4" value="húsimádó">Sk8 the Infinity</label></p>
+        <p><label><input type="checkbox" name="poszter5" value="húsimádó">Given</label></p>
+        <p><label><input type="checkbox" name="poszter6" value="húsimádó">Mirai Nikki</label></p>
     </fieldset>
     <fieldset>
-        <legend>Végezetül</legend>
+        <legend><h2>Végezetül</h2></legend>
         <p><label>Mennyiség: <input type="number" name="mennyiseg"> db</label></p>
         <p><label>Egyéb kívánságok: <textarea name="egyeb"></textarea></label></p>
         <p><label>Kért szállítási idő: <input type="time" name="kiszallitas"></label></p>
@@ -121,5 +97,6 @@ font-family: 'Old Standard TT', serif;
         <input type="submit" name="kuldes">
     </fieldset>
     </form>
+    </div>
 </body>
 </html>
