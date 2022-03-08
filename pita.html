@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pita</title>
+</head>
+
+<body>
+        <p style="border: 1px solid black; width: 175px; height: 20px; border-radius: 5px; color: red; " id="eredmeny"> C értéke:</p>
+
+    <img src="https://www.nkp.hu/tankonyv/matematika_9//img/Szaki09_matek/FI_511010902_szakiskola_9_NKP-116b.png?max_width=2048"
+        alt=""><br>
+    <fieldset style="width:fit-content;" >
+        <legend>Pitagorasz</legend>
+        <input type="number" id="a_old" placeholder="a oldal"><br>
+        <input type="number" id="b_old" placeholder="b oldal"><br>
+        <button onclick="pita(a_old.value, b_old.value)">Számít</button><br>
+    </fieldset>
+
+    <script>
+        function pita(a, b) {
+            var c = 0
+            c = Math.sqrt(a * a + b * b)
+            document.getElementById("eredmeny").innerHTML = c
+        }
+    </script>
+</body>
+
+</html>
