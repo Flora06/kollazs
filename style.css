@@ -30,6 +30,11 @@ body {
       height: 250px;
   }
 
+.gomb{
+    width: 250px;
+    height: 250px; 
+  }
+
 .AnimeP{
     font-family: 'Gloria Hallelujah', cursive;
 }
