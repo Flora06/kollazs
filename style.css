@@ -55,6 +55,10 @@ body {
     height: 300px;
 }
 
+.kepek{
+    display: flex;
+    justify-content: center; }
+
 .AnimeP{
     font-family: 'Gloria Hallelujah', cursive;
 }
