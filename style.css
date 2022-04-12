@@ -50,6 +50,11 @@ body {
     height: 250px; 
   }
 
+.eger {
+    width: 300px;
+    height: 300px;
+}
+
 .AnimeP{
     font-family: 'Gloria Hallelujah', cursive;
 }
