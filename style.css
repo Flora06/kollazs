@@ -25,6 +25,11 @@ body {
     text-align: center;
   }
 
+  .pita{
+      width: 250px;
+      height: 250px;
+  }
+
 .AnimeP{
     font-family: 'Gloria Hallelujah', cursive;
 }
