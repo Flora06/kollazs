@@ -3,6 +3,10 @@ body {
     font-family: "Lato", sans-serif;
     background-color: darksalmon;
   }
+
+table {
+    margin: auto;
+}
   
   img{
       width: 200px;
